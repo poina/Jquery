@@ -1,0 +1,10 @@
+<p>
+jQueryä käytin monipuolisesti tässä sivustossa. Sulkeutumisaika- tekstikentästä tulee kalenteri esille sitä painaessa.
+Lisäksi oikean puoleinen valikkorakenne on tehty jQueryllä. <br />
+Missä  luet tätä tekstiä on yhdistelmä kahta jQueryä. Ensinnäkin tämän rakenne on kokonaan kopioitu. Mutta olen tänne lisännyt 
+myös haun aina kun välilehteä painetaan. Koodista voit katsoa, että näissä tulisi lukea lorem ipsumia, mutta painaessa välilehteä
+tapahtuu haku txt- tiedostosta. <br />
+Tässä olin hiukan yksioikoinen. Olisin voinyt käyttää samaa metodia jokaisessa välilehdellä, mutta en lähtenyt muuttamaan
+ja opettelemaan miten veisin muuttujia eteenpäin. Täten olisin voinut tehdä samanlaisen rakenteen, joka on tekstikenttien 
+hauissa.
+</p>

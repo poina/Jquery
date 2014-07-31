@@ -1,0 +1,4 @@
+<p>Tähän olen kerännyt tekniikkakohtaisesti tietoa, mitä olen tehnyt mitenkäkin.
+Käytännössä kumpaakaan välilehtivalikkoa ei tulisi tänne vaan nämä ovat enemmänkin nyt 
+tekniikan näyttämistä ja helpottamaan tämän tehtäväksiannon tutkimista.
+</p>

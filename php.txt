@@ -1,0 +1,72 @@
+<p>
+Sivulla on myös PHP- koodia, mutta tätä ei käydä sen enempää lävitse, koska se ei ollut pääasia tässä tehtävässä.
+Laitan tänne kuitenkin koodit,jossa haen PHP- tiedostosta tekstiä. Liitän myös JavaScript- koodin, jossa haen tietoa
+tästä tiedostosta. Tämä div menee ylitse div- määritysten, mutta en korjaa sitä, koska se on helpompi lukea näin<br /><br />
+function lataa(arvo) { <br />
+		<br />
+		try { <br />
+		xmlhttp = window.XMLHttpRequest?new XMLHttpRequest(): <br />
+		new ActiveXObject("Microsoft.XMLHTTP"); <br />
+		} <br />
+		<br />
+		catch (e) { // Määrittele tähän, mitä tapahtuu, jos selain ei tue AJAXia<br />
+		} <br />
+		<br />
+<br />
+		xmlhttp.onreadystatechange = responsenKasittelija; <br />
+
+		linkki='ohjeet.php?arvo='+arvo+'&rnd='+Math.random()*4; //lisätään linkkiin rnd-parametri, jotta selaimen välimuisti ei tekisi tepposia<br />
+		xmlhttp.open('GET', linkki); <br />
+		xmlhttp.send(null); <br />
+		} <br />
+<br />
+<br />
+<br />
+	function responsenKasittelija() {<br />
+<br />
+		if ((xmlhttp.readyState == 4) && (xmlhttp.status == 200)) {<br />
+			document.getElementById("ohjetekstip").innerHTML = xmlhttp.responseText; <br />
+		} <br />
+	}<br />
+<br />
+	Tästä alkaa php- tiedosto<br/>
+<br />
+  switch($_GET['arvo']) {     # URL:ssä välitettiin arvo-muuttuja<br />
+   case '1':    # Jos arvo on 1<br />
+      echo "<br />
+        Tahan laitat sen tekstin jonka haluat nakyvan <br>
+        mainoksessa. Esim. Tietojenkasittely<br> 
+        ;)<br />
+       ";<br />
+      break;<br />
+      <br />
+      case '2': # Jos arvo on 2<br />
+      echo "<br />
+        Tahan tulee linkki<br>
+        Esim. https://www.google.fi/<br>
+        <br />
+       ";<br />
+      break;<br />
+	  <br />
+	  case '3': # Jos arvo on 3<br />
+      echo "<br />
+        Tahan laitetaan paivamaara<br>
+        Paivamaaran laittaminen on hyvin<br>
+        tarkka. Esim 24.11.1986<br />
+       ";<br />
+      break;<br />
+	  <br />
+	  case '4': # Jos arvo on 4<br />
+      echo "<br />
+        Tahan laitetaan paivamaara<br><br />
+        Paivamaaran laittaminen on hyvin<br><br />
+        tarkka. Esim 24.11.1986<br />
+       ";<br />
+      break;<br />
+   <br />
+   default:<br />
+  <br />
+  }<br />
+  <br />
+  ?><br />
+	</p>

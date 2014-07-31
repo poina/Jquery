@@ -1,0 +1,4 @@
+<p>
+Javascriptillä olen tehnyt tähän sivustoon tarkistuksia ja käytän myös hakuja tiettyyn Div:iin. 
+Haut menee PHP- tiedostoon, johon lähetetään samalla luku, jonka mukaan osataan antaa oikea teksti.
+</p>
